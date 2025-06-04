@@ -1,3 +1,6 @@
-import {run} from '@oclif/core';
+#!/usr/bin/env node
+import {run as oclifRun} from '@oclif/core';
 
-export default run; 
+oclifRun()
+  .then(require('@oclif/core/flush'))
+  .catch(require('@oclif/core/handle')); 
