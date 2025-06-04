@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.log
+.env
+.venv
+packages/*/node_modules/
+packages/*/dist/ 

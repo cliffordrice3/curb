@@ -1,0 +1,23 @@
+{
+  "name": "@curb/curb-cli",
+  "version": "0.1.0",
+  "oclif": {
+    "commands": "./dist/commands",
+    "bin": "curb",
+    "plugins": []
+  },
+  "bin": {
+    "curb": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@oclif/core": "^2",
+    "@curb/curb": "file:../curb",
+    "@curb/curb-tasks": "file:../curb-tasks"
+  },
+  "devDependencies": {}
+} 
