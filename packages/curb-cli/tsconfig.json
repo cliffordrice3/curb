@@ -1,5 +1,6 @@
 {
   "extends": "../../tsconfig.base.json",
+  "references": [{ "path": "../curb" }, { "path": "../curb-tasks" }],
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist"

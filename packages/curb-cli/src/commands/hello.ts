@@ -1,4 +1,5 @@
 import {Command, Flags} from '@oclif/core';
+import { taskGreet } from '@curb/curb-tasks';
 
 export default class Hello extends Command {
   static description = 'Hello world command';
@@ -15,6 +16,6 @@ export default class Hello extends Command {
   async run() {
     const {flags} = await this.parse(Hello);
     const name = flags.name ?? 'world';
-    this.log(`hello ${name} from curb-cli`);
+    this.log(taskGreet(name));
   }
 } 

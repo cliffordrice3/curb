@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "@oclif/core": "^2",
-    "@curb/curb": "file:../curb",
-    "@curb/curb-tasks": "file:../curb-tasks"
+    "@curb/curb": "workspace:*",
+    "@curb/curb-tasks": "workspace:*"
   },
   "devDependencies": {}
 } 

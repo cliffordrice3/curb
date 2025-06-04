@@ -8,7 +8,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@curb/curb": "file:../curb"
+    "@curb/curb": "workspace:*"
   },
   "devDependencies": {}
 } 

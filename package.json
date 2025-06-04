@@ -5,8 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run build -w curb && npm run build -w curb-tasks && npm run build -w curb-cli && npm run build -w curb-ui",
-    "test": "jest --passWithNoTests"
+    "build": "pnpm -r build",
+    "test": "pnpm -r test"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",

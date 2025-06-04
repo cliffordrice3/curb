@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.base.json",
+  "references": [{ "path": "../curb" }],
   "compilerOptions": {
-    "rootDir": "src",
     "outDir": "dist"
   },
   "include": ["src"]
