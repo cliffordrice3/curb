@@ -1,0 +1,33 @@
+{
+  "name": "@curb/curb-cli",
+  "version": "0.1.0",
+  "oclif": {
+    "commands": "./dist/commands",
+    "bin": "curb",
+    "additionalHelpFlags": [
+      "-h"
+    ],
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-autocomplete"
+    ]
+  },
+  "bin": {
+    "curb": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "readme": "oclif readme",
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif manifest && oclif readme"
+  },
+  "dependencies": {
+    "@curb/curb": "workspace:*",
+    "@curb/curb-tasks": "workspace:*",
+    "@oclif/core": "^2",
+    "@oclif/plugin-autocomplete": "^3.2.29",
+    "@oclif/plugin-help": "^6.2.28"
+  }
+}
